@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale-1.0, user-scalable=no" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="logic.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>CACLULATOR</h1>
+  </header>
+  <table>
+    <tr>
+      <td colspan="4"><input id="screen" size="70px" /></td>
+    </tr>
+    <tr>
+      <td onclick="clr()">C</td>
+      <td colspan="2" onclick="del()">
+        <span class="material-symbols-outlined"> keyboard_backspace </span>
+      </td>
+      <td onclick="insert('/')">/</td>
+    </tr>
+    <tr>
+      <td onclick="insert(7)">7</td>
+      <td onclick="insert(8)">8</td>
+      <td onclick="insert(9)">9</td>
+      <td onclick="insert('*')">x</td>
+    </tr>
+    <tr>
+      <td onclick="insert(4)">4</td>
+      <td onclick="insert(5)">5</td>
+      <td onclick="insert(6)">6</td>
+      <td onclick="insert('-')">-</td>
+    </tr>
+    <tr>
+      <td onclick="insert(1)">1</td>
+      <td onclick="insert(2)">2</td>
+      <td onclick="insert(3)">3</td>
+      <td onclick="insert('+')">+</td>
+    </tr>
+    <tr>
+      <td colspan="2" onclick="insert(0)">0</td>
+      <td onclick="insert('.')">.</td>
+      <td onclick="calcu()">=</td>
+    </tr>
+  </table>
+  <footer>
+    <h2>Created By - Kshitij Atram</h2>
+  </footer>
+
+</body>
+
+</html>
